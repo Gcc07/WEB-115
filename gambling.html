@@ -19,7 +19,10 @@
         console.log(mynum)
         document.getElementById("amount").textContent = "Amount: " + mynum; // `Amount: ${mynum}`;
     })
-    document.addEventListener("keydown")
+    document.addEventListener('keydown', function(event) {
+        pguess = event.key;
+        console.log(pguess)
+    })
      
     </script>
 </body>
