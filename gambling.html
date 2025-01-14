@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "clicker">Click me to gamble</button>
+    <p id="amount">Amount: </p>
+    <p id="guess">Your Guess: </p>
+    <script>
+
+    let mynum = 0
+    let pguess = 0
+    document.getElementById("amount").textContent = "Amount: " + mynum; // `Amount: ${mynum}`;
+    document.getElementById("clicker").addEventListener("click", function(){
+        mynum = Math.floor(Math.random() * 10 + 1);
+        console.log(mynum)
+        document.getElementById("amount").textContent = "Amount: " + mynum; // `Amount: ${mynum}`;
+    })
+    document.addEventListener("keydown")
+     
+    </script>
+</body>
+</html>
